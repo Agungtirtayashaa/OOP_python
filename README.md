@@ -20,20 +20,8 @@ Method ubah() untuk mengubah data berdasarkan nama
 
 Pertama kita mendeklarasikan sebuah class Mahasiswa yang didalamnya terdapat atribut NIM, Nama, nilai tugas, nilai UTS dan nilai UAS.
 
-
-
-class mahasiswa:
-    def __init__(self, nim, nama, tugas, uts, uas):
-        self.nim = nim
-        self.nama = nama
-        self.tugas = tugas
-        self.uts = uts
-        self.uas = uas
-
-
 selanjutnya membuat dictionary osong sebagai tempat menyimpan data-data yang sudah kita input. Ada 5 list kosong yang nanti isinya yaitu NIM, Nama, nilai tugas, nilai UTS dan nilai UAS.
 
-data = mahasiswa([],[],[],[],[])
 
 Kita akan buat beberapa method untuk menambahkan, menampilkan, menghapus, mengubah data mahasiswa.
 Pertama membuat method tambah(), method ini berfungsi untuk menambahkan data. Dalam method ini kita menggunakan append() supaya data yang terakhir ditambahkan, ada di urutan list paling akhir.
@@ -97,20 +85,6 @@ tampilan hapus() data yang sudah ada.
 ### Program
 penjalankan program dan bisa memanggil masing-masing methods, seperti biasa kita menggunakan while loop yang didalamnya ada conditional seperti ini.
 
-data = mahasiswa([],[],[],[],[])
-
-while True:
-    menu = input("\n[(L)ihat, (T)ambah, (U)bah, (H)apus, (K)eluar]:")
-    if menu == "t" or menu == "T":
-       print("\nTambah Data")
-       data.tambah(
-           input("Masukkan NIM : "), 
-           input("Masukkan Nama : "), 
-           int(input("Nilai Tugas : ")), 
-           int(input("Nilai UTS : ")), 
-           int(input("Nilai UAS : "))
-           )
-       print("\nData berhasil ditambahkan")
 
     elif menu == "l" or menu == "L":
         print("\nDaftar Nilai")
