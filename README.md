@@ -6,10 +6,10 @@
 ##
 Buat program sederhana dengan mengaplikasikan penggunaan class. Buatlah class untuk menampilkan daftar nilai mahasiswa, dengan ketentuan:
 
-Method tambah() untuk menambah data
-Method tampilkan() untuk menampilkan data
-Method hapus() untuk menghapus data berdasarkan nama
-Method ubah() untuk mengubah data berdasarkan nama
+* Method `tambah()` untuk menambah data                
+* Method `tampilkan()` untuk menampilkan data                
+* Method `hapus(nama)` untuk menghapus data berdasarkan nama                
+* Method `ubah(nama)` untuk mengubah data berdasarkan nama  
 
 ## Diagram class
 ![gambar](gambar/diagram.jpg)
@@ -20,6 +20,7 @@ Method ubah() untuk mengubah data berdasarkan nama
 
 Pertama kita mendeklarasikan sebuah class Mahasiswa yang didalamnya terdapat atribut NIM, Nama, nilai tugas, nilai UTS dan nilai UAS.
 
+```bash
 class mahasiswa:
     def __init__(self, nim, nama, tugas, uts, uas):
         self.nim = nim
@@ -27,7 +28,8 @@ class mahasiswa:
         self.tugas = tugas
         self.uts = uts
         self.uas = uas
-        
+```  
+
 selanjutnya membuat dictionary osong sebagai tempat menyimpan data-data yang sudah kita input. Ada 5 list kosong yang nanti isinya yaitu NIM, Nama, nilai tugas, nilai UTS dan nilai UAS.
 
 data = mahasiswa([],[],[],[],[])
@@ -95,6 +97,7 @@ tampilan hapus() data yang sudah ada.
 
 penjalankan program dan bisa memanggil masing-masing methods, seperti biasa kita menggunakan while loop yang didalamnya ada conditional seperti ini.
 
+```bash
 while True:
     menu = input("\n[(L)ihat, (T)ambah, (U)bah, (H)apus, (K)eluar]:")
     if menu == "t" or menu == "T":
@@ -151,5 +154,5 @@ while True:
 
     else:
         print("\nPerintah yang dimasukkan salah!\n")
-
+```             
 ### Terima Kasih
