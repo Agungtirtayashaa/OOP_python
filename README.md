@@ -8,8 +8,8 @@ Buat program sederhana dengan mengaplikasikan penggunaan class. Buatlah class un
 
 Method tambah() untuk menambah data
 Method tampilkan() untuk menampilkan data
-Method hapus(nama) untuk menghapus data berdasarkan nama
-Method ubah(nama) untuk mengubah data berdasarkan nama
+Method hapus() untuk menghapus data berdasarkan nama
+Method ubah() untuk mengubah data berdasarkan nama
 
 ## Diagram class
 ![gambar](gambar/diagram.jpg)
@@ -20,6 +20,7 @@ Method ubah(nama) untuk mengubah data berdasarkan nama
 
 Pertama kita mendeklarasikan sebuah class Mahasiswa yang didalamnya terdapat atribut NIM, Nama, nilai tugas, nilai UTS dan nilai UAS.
 
+
 class mahasiswa:
     def __init__(self, nim, nama, tugas, uts, uas):
         self.nim = nim
@@ -28,9 +29,12 @@ class mahasiswa:
         self.uts = uts
         self.uas = uas
 
+
 selanjutnya membuat dictionary osong sebagai tempat menyimpan data-data yang sudah kita input. Ada 5 list kosong yang nanti isinya yaitu NIM, Nama, nilai tugas, nilai UTS dan nilai UAS.
 
+
 data = mahasiswa([],[],[],[],[])
+
 
 Kita akan buat beberapa method untuk menambahkan, menampilkan, menghapus, mengubah data mahasiswa.
 Pertama membuat method tambah(), method ini berfungsi untuk menambahkan data. Dalam method ini kita menggunakan append() supaya data yang terakhir ditambahkan, ada di urutan list paling akhir.
