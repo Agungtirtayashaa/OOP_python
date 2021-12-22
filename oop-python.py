@@ -1,5 +1,3 @@
-
-
 class mahasiswa:
     def __init__(self, nim, nama, tugas, uts, uas):
         self.nim = nim
